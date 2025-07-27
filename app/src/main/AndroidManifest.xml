@@ -18,6 +18,12 @@
         android:theme="@style/Theme.WeatherDemo"
         tools:targetApi="31">
         <activity
+            android:name=".adapter.MyHourlyAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".adapter"
+            android:exported="false" />
+        <activity
             android:name=".view.auth.AddToDO"
             android:exported="false" />
         <activity

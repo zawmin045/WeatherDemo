@@ -79,8 +79,9 @@ class Login : AppCompatActivity() {
 
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password).addOnCompleteListener { task ->
                 if (task.isSuccessful){
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent (this , MainActivity ::class.java)
                     startActivity(intent)
+
 
                 }else{
                     Toast.makeText(this, "Login failed.", Toast.LENGTH_SHORT).show()
@@ -100,4 +101,5 @@ class Login : AppCompatActivity() {
         return networkCapabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
 
     }
+
 }
